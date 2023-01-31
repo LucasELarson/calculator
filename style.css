@@ -9,15 +9,46 @@
     
 }
 
-.screen{
-    display: flex;
-    justify-content: flex-end;
+.screen {
     background-color: lightgray;
     width: 90%;
     height: 20%;
     margin: 5% 5%;
-    font-size: 400%;
     border-radius: 10px;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.top{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bottomscreen{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#display{
+    font-size: 400%;
+    margin-top: 80px;
+}
+
+#helddisplay{
+    font-size: 200%;
+    margin-top: 0px;
+    /* display: contents ; */
 }
 
 .functions{
