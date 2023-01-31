@@ -102,3 +102,58 @@ function updateStoredNumbers(){
         } 
     }
 }
+
+
+//Adds keyboard support for calculator//
+
+var addEvent = document.addEventListener ? function(target,type,action){
+    if(target){
+        target.addEventListener(type,action,false);
+    }
+} : function(target,type,action){
+    if(target){
+        target.attachEvent('on' + type,action,false);
+    }
+}
+
+addEvent(document,'keydown',function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    if(key===49){
+        input(1);
+    } else if (key === 50 ){
+        input(2);
+    } else if (key === 51){
+        input(3);
+    } else if (key === 52){
+        input(4);
+    } else if (key === 53){
+        input(5);
+    } else if (key === 54){
+        input(6);
+    } else if (key === 55){
+        input(7);
+    } else if (key === 56){
+        input(8);
+    } else if (key === 57){
+        input(9);
+    } else if (key === 190){
+        input('.');
+    } else if (key === 8){
+        deleteInput();
+    } else if (key === 13){
+        updateStoredNumbers(); 
+    } else if (key === 81){
+        updateStoredNumbers();
+        activeOperator = '*';
+    }  else if (key === 87){
+        updateStoredNumbers();
+        activeOperator = '/';
+    } else if (key === 69){
+        updateStoredNumbers();
+        activeOperator = '+';
+    } else if (key === 82){
+        updateStoredNumbers();
+        activeOperator = '-';
+    }
+});

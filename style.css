@@ -94,3 +94,17 @@ body {
     justify-content: center;
     align-content: center;
 }
+
+.legend{
+    display: flex;
+    flex-direction: column;
+    background: darkgrey;
+    height: fit-content;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}

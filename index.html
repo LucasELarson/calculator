@@ -9,6 +9,14 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <div class="legend">
+        <p>Q for *</p>
+        <p>W for /</p>
+        <p>E for +</p>
+        <p>R for -</p>
+        <p>Enter for =</p>
+        <p>Backspace for Delete</p>
+    </div>
     <div class="calcbody">
         <div class="screen">
             <div class="top">
@@ -24,31 +32,31 @@
         </div>
         <div class="bottom">
                 <div class="row">
-                    <button onclick="input(1); makeTrail(1)">1</button>
-                    <button onclick="input(2); makeTrail(2)">2</button>
-                    <button onclick="input(3); makeTrail(3)">3</button>
-                    <button onclick=" updateStoredNumbers(); activeOperator = '/'; makeTrail('/')">/</button>
+                    <button onclick="input(1)">1</button>
+                    <button onclick="input(2)">2</button>
+                    <button onclick="input(3)">3</button>
+                    <button onclick=" updateStoredNumbers(); activeOperator = '/'">/</button>
                 </div>
 
                 <div class="row">
-                    <button onclick="input(4); makeTrail(4)">4</button>
-                    <button onclick="input(5); makeTrail(5)">5</button>
-                    <button onclick="input(6); makeTrail(6)">6</button>
-                    <button onclick=" updateStoredNumbers(); activeOperator = '*'; makeTrail('*')">*</button>
+                    <button onclick="input(4)">4</button>
+                    <button onclick="input(5)">5</button>
+                    <button onclick="input(6)">6</button>
+                    <button onclick=" updateStoredNumbers(); activeOperator = '*'">*</button>
                 </div>
                 
                 <div class="row">
-                    <button onclick="input(7); makeTrail(7)">7</button>
-                    <button onclick="input(8); makeTrail(8)">8</button>
-                    <button onclick="input(9); makeTrail(9)">9</button>
-                    <button onclick=" updateStoredNumbers(); activeOperator = '+'; makeTrail('+')">+</button>
+                    <button onclick="input(7)">7</button>
+                    <button onclick="input(8)">8</button>
+                    <button onclick="input(9)">9</button>
+                    <button onclick=" updateStoredNumbers(); activeOperator = '+'">+</button>
                 </div>
 
                 <div class="row">  
-                    <button onclick="input(0); makeTrail(0)">0</button>
-                    <button onclick="input('.'); makeTrail('.')">.</button>
+                    <button onclick="input(0)">0</button>
+                    <button onclick="input('.')">.</button>
                     <button onclick=" updateStoredNumbers()">=</button>
-                    <button onclick=" updateStoredNumbers(); makeTrail('-'); activeOperator = '-'">-</button> 
+                    <button onclick=" updateStoredNumbers(); activeOperator = '-'">-</button> 
                 </div>
         </div>    
     </div>
