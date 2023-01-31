@@ -11,39 +11,39 @@
 <body>
     <div class="calcbody">
         <div class="screen">
-            <p class="screentext">23456</p>
+            <p class="screentext" id="display" value=""></p>
         </div>
         <div class="functions">
-            <button class="func">CLEAR</button>
-            <button class="func">DELETE</button>            
+            <button class="func" onclick="clearInput()">CLEAR</button>
+            <button class="func" onclick="deleteInput()">DELETE</button>            
         </div>
         <div class="bottom">
                 <div class="row">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>/</button>
+                    <button onclick="input(1)">1</button>
+                    <button onclick="input(2)">2</button>
+                    <button onclick="input(3)">3</button>
+                    <button onclick="activeOperator = '/'">/</button>
                 </div>
 
                 <div class="row">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>*</button>
+                    <button onclick="input(4)">4</button>
+                    <button onclick="input(5)">5</button>
+                    <button onclick="input(6)">6</button>
+                    <button onclick="activeOperator = '*'">*</button>
                 </div>
                 
                 <div class="row">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>+</button>
+                    <button onclick="input(7)">7</button>
+                    <button onclick="input(8)">8</button>
+                    <button onclick="input(9)">9</button>
+                    <button onclick="activeOperator = '+'">+</button>
                 </div>
 
                 <div class="row">  
-                    <button>0</button>
-                    <button>.</button>
-                    <button>=</button>
-                    <button>-</button> 
+                    <button onclick="input(0)">0</button>
+                    <button onclick="input('.')">.</button>
+                    <button onclick="operate(activeOperator)">=</button>
+                    <button onclick="activeOperator = '-'">-</button> 
                 </div>
         </div>    
     </div>
