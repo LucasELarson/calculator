@@ -123,6 +123,8 @@ addEvent(document,'keydown',function(e){
         input(1);
     } else if (key === 50 ){
         input(2);
+    } else if (key === 48 ) {
+        input(0);
     } else if (key === 51){
         input(3);
     } else if (key === 52){
